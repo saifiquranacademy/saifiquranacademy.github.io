@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Saifi Quran Academy - Online Quran Learning & Teaching</title>
+    <meta name="title" content="Saifi Quran Academy - Online Quran Learning & Teaching">
+    <meta name="description"
+        content="Learn Quran online with professional guidance. Offering Quran reading, recitation, memorization, translation, and Arabic grammar courses. Join our 1-to-1 online classes with flexible timings.">
+    <meta name="keywords"
+        content="Quran academy, online Quran classes, Quran learning, Quran teaching, Islamic education, Arabic grammar, Quran memorization, Quran translation, online Islamic courses">
+    <meta name="author" content="Maulana Muhammad Nadeem Saifi">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saifiquranacademy.com/">
+    <meta property="og:title" content="Saifi Quran Academy - Online Quran Learning & Teaching">
+    <meta property="og:description"
+        content="Learn Quran online with professional guidance. Offering Quran reading, recitation, memorization, translation, and Arabic grammar courses. Join our 1-to-1 online classes with flexible timings.">
+    <meta property="og:image" content="images/banner.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://saifiquranacademy.com/">
+    <meta property="twitter:title" content="Saifi Quran Academy - Online Quran Learning & Teaching">
+    <meta property="twitter:description"
+        content="Learn Quran online with professional guidance. Offering Quran reading, recitation, memorization, translation, and Arabic grammar courses. Join our 1-to-1 online classes with flexible timings.">
+    <meta property="twitter:image" content="images/banner.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/logo.webp">
+    <link rel="apple-touch-icon" href="images/logo.webp">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://saifiquranacademy.com/">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #006400;
+            --secondary-color: #DAA520;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 100, 0, 0.7), rgba(0, 100, 0, 0.6)), url('images/banner.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            padding: 12rem 0;
+            text-align: center;
+            min-height: 80vh;
+        }
+
+        .hero-section h1 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        .hero-section .lead {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            font-size: 1.5rem;
+        }
+
+        .hero-logo {
+            max-width: 180px;
+            margin-bottom: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .quote-section {
+            background-color: var(--light-bg);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .course-card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 1.5rem;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .cta-section {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4rem 0;
+        }
+
+        .arabic-text {
+            font-family: 'Traditional Arabic', serif;
+            font-size: 1.2em;
+        }
+
+        .contact-info {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .social-icons {
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+
+        .social-icons a {
+            color: var(--primary-color);
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: var(--secondary-color);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float i {
+            margin-top: 0;
+        }
+
+        /* Responsive WhatsApp button */
+        @media screen and (max-width: 767px) {
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 25px;
+            }
+        }
+
+        .blockquote>:last-child {
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/923227045995" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <img src="images/logo.webp" alt="Saifi Quran Academy Logo" class="hero-logo">
+            <h1 class="display-4 mb-4">Saifi Quran Academy</h1>
+            <p class="lead">Learn Quran Online with Professional Guidance</p>
+        </div>
+    </div>
+
+    <!-- Quote Section -->
+    <div class="quote-section">
+        <div class="container text-center">
+            <blockquote class="blockquote">
+                <p class="mb-0">"The best of you are those who learn the Quran and teach it to others."</p>
+                <footer class="blockquote-footer">Sahih-Al-Bukhari</footer>
+            </blockquote>
+        </div>
+    </div>
+
+    <!-- Courses Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Courses</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card course-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Reading of Quran</h5>
+                            <p class="card-text arabic-text">ناظرہ قرآن</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card course-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Recitation of Quran</h5>
+                            <p class="card-text arabic-text">تلاوت قرآن</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card course-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Quran Memorization</h5>
+                            <p class="card-text arabic-text">حفظ القرآن</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card course-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Translation of Quran</h5>
+                            <p class="card-text arabic-text">ترجمہ و تفسیر</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card course-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Basic Arabic Grammar</h5>
+                            <p class="card-text arabic-text">بنیادی گرامر</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card course-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Obligatory Science Course</h5>
+                            <p class="card-text arabic-text">فرض علوم کورس</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Class Features</h2>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h5>30-40 Minutes</h5>
+                    <p>Per Class Duration</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h5>1 to 1</h5>
+                    <p>Online Class</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h5>Flexible</h5>
+                    <p>Timings Available</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h5>3 Days</h5>
+                    <p>FREE Trial</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center">
+                    <div class="contact-info">
+                        <h2 class="mb-4">Contact Us</h2>
+                        <p class="lead mb-4">
+                            <i class="fas fa-phone"></i> +92 322 7045995
+                        </p>
+                        <div class="social-icons">
+                            <a href="https://wa.me/923227045995" target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-skype"></i></a>
+                            <a href="https://wa.me/923227045995" target="_blank" rel="noopener noreferrer"><i
+                                    class="fas fa-video"></i></a>
+                            <a href="https://wa.me/923227045995" target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-whatsapp"></i></a>
+                            <a href="https://wa.me/923227045995" target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section text-center">
+        <div class="container">
+            <h2 class="mb-4">Start Your Journey Today</h2>
+            <p class="lead mb-4">Register now for your FREE 3-day trial</p>
+            <a href="https://wa.me/923227045995" class="btn btn-light btn-lg">Register Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p>&copy; 2024 Saifi Quran Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
